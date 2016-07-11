@@ -1,0 +1,390 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C4923FDE1D2A546700707A51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4923FDD1D2A546700707A51 /* AppDelegate.swift */; };
+		C4923FE01D2A546700707A51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4923FDF1D2A546700707A51 /* ViewController.swift */; };
+		C4923FE31D2A546700707A51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4923FE11D2A546700707A51 /* Main.storyboard */; };
+		C4923FE51D2A546700707A51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4923FE41D2A546700707A51 /* Assets.xcassets */; };
+		C4923FE81D2A546700707A51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4923FE61D2A546700707A51 /* LaunchScreen.storyboard */; };
+		E3B4CB5F09753529217EBEA4 /* Pods_HelloFabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D945F402CF4761B9E969271B /* Pods_HelloFabric.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3F4287F9659669D3EC2C834A /* Pods-HelloFabric.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloFabric.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloFabric/Pods-HelloFabric.release.xcconfig"; sourceTree = "<group>"; };
+		4D16F4323D188BCBFC189F5B /* Pods-HelloFabric.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloFabric.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloFabric/Pods-HelloFabric.debug.xcconfig"; sourceTree = "<group>"; };
+		C4923FDA1D2A546700707A51 /* HelloFabric.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloFabric.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4923FDD1D2A546700707A51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C4923FDF1D2A546700707A51 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C4923FE21D2A546700707A51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C4923FE41D2A546700707A51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C4923FE71D2A546700707A51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C4923FE91D2A546700707A51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D945F402CF4761B9E969271B /* Pods_HelloFabric.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloFabric.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C4923FD71D2A546700707A51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3B4CB5F09753529217EBEA4 /* Pods_HelloFabric.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		60E7C5099BECFDD1BE348897 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D945F402CF4761B9E969271B /* Pods_HelloFabric.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8904B877530CF4408346368D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4D16F4323D188BCBFC189F5B /* Pods-HelloFabric.debug.xcconfig */,
+				3F4287F9659669D3EC2C834A /* Pods-HelloFabric.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C4923FD11D2A546700707A51 = {
+			isa = PBXGroup;
+			children = (
+				C4923FDC1D2A546700707A51 /* HelloFabric */,
+				C4923FDB1D2A546700707A51 /* Products */,
+				8904B877530CF4408346368D /* Pods */,
+				60E7C5099BECFDD1BE348897 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C4923FDB1D2A546700707A51 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C4923FDA1D2A546700707A51 /* HelloFabric.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C4923FDC1D2A546700707A51 /* HelloFabric */ = {
+			isa = PBXGroup;
+			children = (
+				C4923FDD1D2A546700707A51 /* AppDelegate.swift */,
+				C4923FDF1D2A546700707A51 /* ViewController.swift */,
+				C4923FE11D2A546700707A51 /* Main.storyboard */,
+				C4923FE41D2A546700707A51 /* Assets.xcassets */,
+				C4923FE61D2A546700707A51 /* LaunchScreen.storyboard */,
+				C4923FE91D2A546700707A51 /* Info.plist */,
+			);
+			path = HelloFabric;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C4923FD91D2A546700707A51 /* HelloFabric */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4923FEC1D2A546700707A51 /* Build configuration list for PBXNativeTarget "HelloFabric" */;
+			buildPhases = (
+				82EAC39D80B25050191D6D2A /* [CP] Check Pods Manifest.lock */,
+				C4923FD61D2A546700707A51 /* Sources */,
+				C4923FD71D2A546700707A51 /* Frameworks */,
+				C4923FD81D2A546700707A51 /* Resources */,
+				3A46B125A9CA05964525A7DD /* [CP] Embed Pods Frameworks */,
+				B32758005D4677E354D6C682 /* [CP] Copy Pods Resources */,
+				C43EE45A1D2A54CA00C22D62 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HelloFabric;
+			productName = HelloFabric;
+			productReference = C4923FDA1D2A546700707A51 /* HelloFabric.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C4923FD21D2A546700707A51 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "@ demand;";
+				TargetAttributes = {
+					C4923FD91D2A546700707A51 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = NT3TRSW8E2;
+					};
+				};
+			};
+			buildConfigurationList = C4923FD51D2A546700707A51 /* Build configuration list for PBXProject "HelloFabric" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C4923FD11D2A546700707A51;
+			productRefGroup = C4923FDB1D2A546700707A51 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C4923FD91D2A546700707A51 /* HelloFabric */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C4923FD81D2A546700707A51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4923FE81D2A546700707A51 /* LaunchScreen.storyboard in Resources */,
+				C4923FE51D2A546700707A51 /* Assets.xcassets in Resources */,
+				C4923FE31D2A546700707A51 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3A46B125A9CA05964525A7DD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloFabric/Pods-HelloFabric-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82EAC39D80B25050191D6D2A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B32758005D4677E354D6C682 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloFabric/Pods-HelloFabric-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C43EE45A1D2A54CA00C22D62 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 025b6af548d90d8e5e24f1563ffd8267686a7405 aceaed7be19245e139fe0e317c6cf01bb0acd227283bda1dd871079d67240781";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C4923FD61D2A546700707A51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4923FE01D2A546700707A51 /* ViewController.swift in Sources */,
+				C4923FDE1D2A546700707A51 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C4923FE11D2A546700707A51 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4923FE21D2A546700707A51 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C4923FE61D2A546700707A51 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4923FE71D2A546700707A51 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C4923FEA1D2A546700707A51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C4923FEB1D2A546700707A51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C4923FED1D2A546700707A51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D16F4323D188BCBFC189F5B /* Pods-HelloFabric.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				INFOPLIST_FILE = HelloFabric/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.pixnet.toyboy17.HelloFabric;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C4923FEE1D2A546700707A51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F4287F9659669D3EC2C834A /* Pods-HelloFabric.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				INFOPLIST_FILE = HelloFabric/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.pixnet.toyboy17.HelloFabric;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C4923FD51D2A546700707A51 /* Build configuration list for PBXProject "HelloFabric" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4923FEA1D2A546700707A51 /* Debug */,
+				C4923FEB1D2A546700707A51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4923FEC1D2A546700707A51 /* Build configuration list for PBXNativeTarget "HelloFabric" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4923FED1D2A546700707A51 /* Debug */,
+				C4923FEE1D2A546700707A51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C4923FD21D2A546700707A51 /* Project object */;
+}

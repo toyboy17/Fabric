@@ -1,0 +1,34 @@
+PODS:
+  - Appsee (2.2)
+  - Branch (0.12.3):
+    - Branch/Core (= 0.12.3)
+    - Branch/without-IDFA (= 0.12.3)
+  - Branch/Core (0.12.3)
+  - Branch/without-IDFA (0.12.3)
+  - Crashlytics (3.7.2):
+    - Fabric (~> 1.6.3)
+  - Digits (2.3.0):
+    - TwitterCore (= 2.3.0)
+  - Fabric (1.6.7)
+  - TwitterCore (2.3.0):
+    - Fabric
+
+DEPENDENCIES:
+  - Appsee
+  - Branch
+  - Crashlytics
+  - Digits
+  - Fabric
+  - TwitterCore
+
+SPEC CHECKSUMS:
+  Appsee: c95173e65acaab0ffc8a082c70633c9f5f45d5f0
+  Branch: eced5b5201554811ecb039c74f9913b72caf6cc5
+  Crashlytics: 130ab943f8c78cda7a814b434f270b2e2c8a3cba
+  Digits: af82d24ec38035cc555b60f55cca5abc68a76bed
+  Fabric: caf7580c725e64db144f610ac65cd60956911dc7
+  TwitterCore: 817eae3e291fa4125b47789e26a4f6f024115c1f
+
+PODFILE CHECKSUM: 41892f8396827c548f91bb548a1fdda39c8f0d39
+
+COCOAPODS: 1.0.1
