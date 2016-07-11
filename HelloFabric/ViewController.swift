@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         let btnCrashly = UIButton(type: UIButtonType.RoundedRect)
         //範例碼 button改為btnCrashly
         
-        btnCrashly.frame = CGRectMake(20, 50, 100, 30)//設定按鈕畫面位置
+        btnCrashly.frame = CGRectMake(20, 50, 100, 40)//設定按鈕畫面位置
         btnCrashly.setTitle("Crashly", forState: UIControlState.Normal)
         //上排左方按鈕設定文字為Crashly，用程式產生
         
