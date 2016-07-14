@@ -10,6 +10,9 @@ PODS:
   - Digits (2.3.0):
     - TwitterCore (= 2.3.0)
   - Fabric (1.6.7)
+  - mopub-ios-sdk (4.7.0):
+    - mopub-ios-sdk/MoPubSDK (= 4.7.0)
+  - mopub-ios-sdk/MoPubSDK (4.7.0)
   - TwitterCore (2.3.0):
     - Fabric
 
@@ -19,6 +22,7 @@ DEPENDENCIES:
   - Crashlytics
   - Digits
   - Fabric
+  - mopub-ios-sdk
   - TwitterCore
 
 SPEC CHECKSUMS:
@@ -27,8 +31,9 @@ SPEC CHECKSUMS:
   Crashlytics: 130ab943f8c78cda7a814b434f270b2e2c8a3cba
   Digits: af82d24ec38035cc555b60f55cca5abc68a76bed
   Fabric: caf7580c725e64db144f610ac65cd60956911dc7
+  mopub-ios-sdk: e46b277cdb77b1745567b419742f77fed6865262
   TwitterCore: 817eae3e291fa4125b47789e26a4f6f024115c1f
 
-PODFILE CHECKSUM: 41892f8396827c548f91bb548a1fdda39c8f0d39
+PODFILE CHECKSUM: 7d341f18aedf658795514bbf0e9ee972de3d3318
 
 COCOAPODS: 1.0.1

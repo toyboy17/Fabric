@@ -85,7 +85,9 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/Branch/Branch.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/mopub-ios-sdk/mopub_ios_sdk.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/Branch/Branch.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/mopub-ios-sdk/mopub_ios_sdk.framework"
 fi

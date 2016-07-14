@@ -12,7 +12,7 @@ import Crashlytics
 import Appsee
 import Branch
 import DigitsKit
-
+import mopub_ios_sdk//與文件不同，新增加
 
 
 @UIApplicationMain
@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
-        Fabric.with([Crashlytics.self, Appsee.self, Branch.self, Digits.self])
+        Fabric.with([Crashlytics.self, Appsee.self, Branch.self, Digits.self, MoPub.self])
 
         
         

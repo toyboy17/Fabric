@@ -11,7 +11,13 @@ import Crashlytics
 import DigitsKit
 //同時使用Answer與Crashlytics時，不需import Answer，否則會報錯！！！
 
-class ViewController: UIViewController {
+import mopub_ios_sdk//與文件不同，新增加
+
+
+class ViewController: UIViewController, MPAdViewDelegate {
+    
+    // MoPub實作 TODO: Replace this test id with your personal ad unit id
+    var adView: MPAdView = MPAdView(adUnitId: "0fd404de447942edb7610228cb412614", size: MOPUB_BANNER_SIZE)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,9 +27,11 @@ class ViewController: UIViewController {
         let btnCrashly = UIButton(type: UIButtonType.RoundedRect)
         //範例碼 button改為btnCrashly
         
-        btnCrashly.frame = CGRectMake(20, 50, 100, 40)//設定按鈕畫面位置
-        btnCrashly.setTitle("Crashly", forState: UIControlState.Normal)
-        //上排左方按鈕設定文字為Crashly，用程式產生
+        btnCrashly.frame = CGRectMake(20, 50, 100, 30)
+        //設定按鈕畫面位置(x,y,長,寬)
+        btnCrashly.setTitle("CrashEvent", forState: UIControlState.Normal)
+        //上排按鈕設定文字為CrashEvent，用程式產生，這是一個測試crash發生的模擬按鈕
+        //按下按鈕後，後台偵測數字即會改變，用來確認偵測是否成功
         
         btnCrashly.addTarget(self, action: #selector(self.crashButtonTapped(_:)), forControlEvents: UIControlEvents.TouchUpInside)
         view.addSubview(btnCrashly)
@@ -32,17 +40,18 @@ class ViewController: UIViewController {
         //create a button to represent "an important action" in your app, and log a custom event to track this metric.
         let btnAnswer = UIButton(type: UIButtonType.RoundedRect)
         //範例碼 button改為btnAnswer
-        btnAnswer.frame = CGRectMake(200, 200, 100, 30)
+        
+        btnAnswer.frame = CGRectMake(20, 100, 100, 30)//設定按鈕畫面位置(x,y,長,寬)
         btnAnswer.setTitle("Trigger Key Metric", forState: UIControlState.Normal)
-        //中央Trigger Key Metric"偵測觸發按鈕"用程式產生，這是一個練習用的模擬按鈕
+        //Trigger Key Metric"偵測觸發按鈕"用程式產生，這是一個練習用的模擬按鈕
         //按下按鈕後，後台偵測數字即會改變，用來確認偵測是否成功
         
         btnAnswer.addTarget(self, action: #selector(self.anImportantUserAction), forControlEvents: UIControlEvents.TouchUpInside)
         btnAnswer.sizeToFit()
-//        btnAnswer.center = self.view.center
+        //btnAnswer.center = self.view.center 原範例碼按鈕位置至中
         view.addSubview(btnAnswer)
         
-        //以下為Digits的實作 使用電話號碼登入
+        //以下為Digits的實作 使用電話號碼登入use my phone number
         let authButton = DGTAuthenticateButton(authenticationCompletion: { (session: DGTSession?, error: NSError?) in
             if (session != nil) {
                 // TODO: associate the session userID with your user model
@@ -54,10 +63,10 @@ class ViewController: UIViewController {
                 NSLog("Authentication error: %@", error!.localizedDescription)
             }
         })
-        authButton.digitsAppearance = self.makeTheme()//Digi 新增程式碼
-        authButton.frame = CGRectMake(300, 300, 100, 30)//設定按鈕畫面位置
+        authButton.digitsAppearance = self.makeTheme()//Digis 新增程式碼
+        authButton.frame = CGRectMake(20, 150, 200, 30)//設定按鈕畫面位置(x,y,長,寬)
 
-//        authButton.center = self.view.center
+        //authButton.center = self.view.center 原範例碼按鈕位置至中
         self.view.addSubview(authButton)
         
         //以下為Digits的實作 Upload an Address Book and lookup friends自動更新通訊錄朋友
@@ -69,13 +78,26 @@ class ViewController: UIViewController {
                 }
             }
         }
-        authenticateButton.center = self.view.center
+        authenticateButton.frame = CGRectMake(20, 200, 200, 30)//設定按鈕畫面位置(x,y,長,寬)
+        //authenticateButton.center = self.view.center 原範例碼按鈕位置至中
         self.view.addSubview(authenticateButton)
+        
+        //以下為MoPub實作
+        self.adView.delegate = self
+        
+        // Positions the ad at the bottom, with the correct size
+        self.adView.frame = CGRectMake(0, self.view.bounds.size.height - MOPUB_BANNER_SIZE.height,
+                                       MOPUB_BANNER_SIZE.width, MOPUB_BANNER_SIZE.height)
+        self.view.addSubview(self.adView)
+        
+        // Loads the ad over the network
+        self.adView.loadAd()
+
 
 
     }//我是viewDidLoad的結束大括號
     
-    //crashly IBAction按鈕  不可放在viewdidload中 crash報告按鈕
+    //crashly IBAction按鈕  不可放在viewdidload中 模擬crash事件按鈕
     @IBAction func crashButtonTapped(sender: AnyObject) {
         Crashlytics.sharedInstance().crash()
     //模擬器按鈕報錯Thread 1:EXC_BAD_INSTRUCTION(code=EXC_i386_INVOP, subcode=0x0)
@@ -104,7 +126,7 @@ class ViewController: UIViewController {
         return theme;
     }
     
-    //Digi呼叫的method  不可放在viewdidload中 朋友電話自動更新
+    //Digi呼叫的method  不可放在viewdidload中 通訊錄朋友自動更新
     private func uploadDigitsContacts(session: DGTSession) {
         let digitsContacts = DGTContacts(userSession: session)
         digitsContacts.startContactsUploadWithCompletion { result, error in
@@ -116,6 +138,7 @@ class ViewController: UIViewController {
         }
     }
     
+    //Digi呼叫的method  不可放在viewdidload中 尋找朋友
     private func findDigitsFriends(session: DGTSession) {
         let digitsContacts = DGTContacts(userSession: session)
         // looking up friends happens in batches. Pass nil as cursor to get the first batch.
@@ -123,15 +146,14 @@ class ViewController: UIViewController {
             // If nextCursor is not nil, you can continue to call lookupContactMatchesWithCursor: to retrieve even more friends.
             // Matches contain instances of DGTUser. Use DGTUser's userId to lookup users in your own database.
             print("Friends:")
-//            for digitsUser in matches {
-////                print("Digits ID: \(digitsUser.userID)")
-//            }
             
+//            for digitsUser in matches {
+//                print("Digits ID: \(digitsUser.userID)")
+//            }
+            //註解掉的範例檔案，bug未解
             
             
             // Show the alert on the main thread
-            
-            
             dispatch_async(dispatch_get_main_queue()) {
                 let message = "\(matches.count) friends found!"
                 let alertController = UIAlertController(title: "Lookup complete", message: message, preferredStyle: .Alert)
@@ -142,13 +164,15 @@ class ViewController: UIViewController {
         }
     }
 
-
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
+    func viewControllerForPresentingModalView() -> UIViewController! {
+        return self//??
+    }
+    
 
 }//我是viewController的結束大括號
 

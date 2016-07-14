@@ -18,6 +18,7 @@
 /* Begin PBXFileReference section */
 		3F4287F9659669D3EC2C834A /* Pods-HelloFabric.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloFabric.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloFabric/Pods-HelloFabric.release.xcconfig"; sourceTree = "<group>"; };
 		4D16F4323D188BCBFC189F5B /* Pods-HelloFabric.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloFabric.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloFabric/Pods-HelloFabric.debug.xcconfig"; sourceTree = "<group>"; };
+		C45EC8251D3515C10019A864 /* HelloFabric-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelloFabric-Bridging-Header.h"; sourceTree = "<group>"; };
 		C4923FDA1D2A546700707A51 /* HelloFabric.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloFabric.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4923FDD1D2A546700707A51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4923FDF1D2A546700707A51 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +81,7 @@
 			children = (
 				C4923FDD1D2A546700707A51 /* AppDelegate.swift */,
 				C4923FDF1D2A546700707A51 /* ViewController.swift */,
+				C45EC8251D3515C10019A864 /* HelloFabric-Bridging-Header.h */,
 				C4923FE11D2A546700707A51 /* Main.storyboard */,
 				C4923FE41D2A546700707A51 /* Assets.xcassets */,
 				C4923FE61D2A546700707A51 /* LaunchScreen.storyboard */,
@@ -342,11 +344,14 @@
 			baseConfigurationReference = 4D16F4323D188BCBFC189F5B /* Pods-HelloFabric.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				INFOPLIST_FILE = HelloFabric/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.pixnet.toyboy17.HelloFabric;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HelloFabric/HelloFabric-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -355,11 +360,13 @@
 			baseConfigurationReference = 3F4287F9659669D3EC2C834A /* Pods-HelloFabric.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				INFOPLIST_FILE = HelloFabric/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.pixnet.toyboy17.HelloFabric;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HelloFabric/HelloFabric-Bridging-Header.h";
 			};
 			name = Release;
 		};

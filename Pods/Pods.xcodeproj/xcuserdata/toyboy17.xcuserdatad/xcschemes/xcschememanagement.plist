@@ -14,15 +14,25 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>mopub-ios-sdk.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>64B7C3044015752399E7BC06297D5157</key>
+		<key>1188FF69241A247F82820C4D130F3934</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>6BDE33C1C46571B8B09A840CBBA7916A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>92DD1B4527DD69416027FEFEA678C634</key>
 		<dict>
 			<key>primary</key>
 			<true/>

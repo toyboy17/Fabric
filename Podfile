@@ -10,6 +10,7 @@ target 'HelloFabric' do
   pod 'Branch'
   pod 'Digits'
   pod 'TwitterCore'
+  pod 'mopub-ios-sdk'
 
   # Pods for HelloFabric
 
